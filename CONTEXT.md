@@ -120,13 +120,15 @@ Detalhes completos em `src/config/design-tokens.ts`.
 
 ## Deploy
 
-O deploy é **automático**: todo push na branch `main` dispara o workflow
-`.github/workflows/deploy.yml`, que faz o build estático e publica no GitHub Pages.
+O site é hospedado na **Vercel**, conectada ao repositório do GitHub. O deploy é
+**automático**: todo push na branch `main` dispara um novo build na Vercel
+(`next build`) e publica em produção. Pull requests ganham deploys de preview.
 
-- **URL de produção:** https://anapolegatch-coder.github.io/landing-page-metodo-pr/
-- Por ser um "project site", o `next.config.mjs` define `basePath` com o nome do
-  repositório. Se migrar para domínio próprio, ajuste o `basePath` lá (ou defina
-  a variável `BASE_PATH=""` no build).
+- A Vercel detecta o Next.js sozinha. Não há configuração especial: o
+  `next.config.mjs` é mínimo e o app é servido na raiz do domínio.
+- Não usamos mais GitHub Pages nem export estático.
+- Para configurar domínio próprio (ex: metodopolegatch.com.br), use o painel da
+  Vercel em Settings > Domains.
 
 ---
 
