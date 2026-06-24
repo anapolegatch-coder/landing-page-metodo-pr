@@ -52,7 +52,7 @@ export const ptBR = {
   },
 
   methodology: {
-    badge: "A SUA JORNADA",
+    badge: "O PROCESSO DE TREINAMENTO",
     title: "Treinar inteligente é diferente de treinar forte",
     subtitle:
       "O nosso Método de Treinamento Inteligente não trabalha com planilhas genéricas. Trabalhamos com estratégia personalizada que evolui continuamente, junto com você.",
@@ -86,7 +86,7 @@ export const ptBR = {
     callout: {
       icon: "🔬",
       title: "Ciência e Experiência",
-      text: "Cada estratégia foi testada no alto rendimento antes de virar treino. Validado no asfalto, ajustado para você.",
+      text: "Cada estratégia, cada treino planejado tem embasamento científico e foi testado no alto rendimento antes de ser aplicada para você. Validado no pelotão profissional, ajustado para a sua rotina.",
     },
     cta: "VER PLANOS",
   },
