@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Compensa o header fixo ao navegar por âncoras. */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-base text-slate-200 font-sans antialiased;
+    /* Brilhos ambiente: ciano no topo, rosa sutil mais abaixo. */
+    background-image:
+      radial-gradient(60% 50% at 20% 0%, rgba(34, 211, 238, 0.12), transparent 70%),
+      radial-gradient(50% 45% at 90% 20%, rgba(236, 72, 153, 0.1), transparent 70%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-cyan/30 text-white;
+  }
+}
+
+@layer components {
+  /* Glassmorphism — superfície translúcida com desfoque e borda sutil. */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Container central padrão. */
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-8;
+  }
+
+  /* Texto em gradiente ciano para destaques. */
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-cyan-bright to-cyan bg-clip-text text-transparent;
+  }
+
+  /* Etiqueta técnica monoespaçada (selos de sistema/status). */
+  .mono-tag {
+    @apply font-mono text-xs uppercase tracking-[0.2em];
+  }
+}
+
+@layer utilities {
+  /* Estado inicial do reveal on scroll (ver componente Reveal). */
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  .reveal-shown {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-hidden {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
