@@ -19,22 +19,21 @@ export function Problem() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {problem.pains.map((pain, i) => (
             <Reveal key={pain} delay={i * 70}>
-              <div className="glass group h-full rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-pink/30">
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-pink/10 text-pink transition group-hover:bg-pink/20">
+              <div className="glass group flex h-full items-start gap-4 rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-red-500/40">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-500/10 text-red-500 transition group-hover:bg-red-500/20">
                   <svg
-                    width="20"
-                    height="20"
+                    width="18"
+                    height="18"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden
                   >
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="8" x2="12" y2="12" />
-                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
                   </svg>
                 </div>
                 <p className="text-base leading-relaxed text-slate-300">
