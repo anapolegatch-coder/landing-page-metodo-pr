@@ -48,7 +48,7 @@ export const ptBR = {
       "Tem receio de se lesionar ou entrar em overtraining",
       "Não consegue conciliar treino eficiente com rotina",
     ],
-    highlight: "O problema não é falta de dedicação. É falta de método.",
+    highlight: "O problema nunca foi falta de dedicação. E sim, falta de método.",
   },
 
   methodology: {

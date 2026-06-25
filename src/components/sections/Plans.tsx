@@ -68,23 +68,7 @@ export function Plans() {
                     {plan.tagline}
                   </p>
 
-                  <div className="mt-6 flex items-end gap-1">
-                    <span className="text-4xl font-black text-white">
-                      {plan.price}
-                    </span>
-                    <span className="mb-1 text-slate-400">{plan.period}</span>
-                  </div>
-                  {plan.billingNote ? (
-                    <p className="mt-1 font-mono text-xs text-slate-500">
-                      {plan.billingNote}
-                    </p>
-                  ) : (
-                    <p className="mt-1 font-mono text-xs text-transparent select-none">
-                      .
-                    </p>
-                  )}
-
-                  <p className="mt-5 text-sm leading-relaxed text-slate-300">
+                  <p className="mt-6 text-sm leading-relaxed text-slate-300">
                     {plan.description}
                   </p>
 
