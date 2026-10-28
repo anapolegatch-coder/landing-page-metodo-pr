@@ -243,12 +243,73 @@ export const ptBR = {
     },
   },
 
+  // Página de captura (/guia). Título, descrição e arquivo são PLACEHOLDER
+  // até o material definitivo ficar pronto.
+  leadMagnet: {
+    meta: {
+      title: "Guia do Ciclista Master | Polegatch Ride",
+      description:
+        "23 anos de pelotão profissional condensados em princípios curtos para treinar com inteligência.",
+    },
+    logoAlt: "Polegatch Ride",
+    title: "GUIA DO CICLISTA MASTER.",
+    subtitle: "Método Polegatch de Treinamento Inteligente®",
+    description:
+      "23 anos de pelotão profissional e 16 títulos nacionais, condensados em princípios curtos para você treinar com inteligência e continuar quebrando seus recordes.",
+    fields: {
+      firstName: "Nome",
+      lastName: "Sobrenome",
+      email: "E-mail",
+    },
+    consent:
+      "Ao enviar, você aceita receber e-mails do Polegatch Ride. Você pode sair quando quiser.",
+    submit: "RECEBER O GUIA.",
+    submitting: "ENVIANDO...",
+    success: {
+      title: "Pronto. O guia está a caminho.",
+      text: "Confira sua caixa de entrada em alguns minutos. Se não aparecer, olhe o spam ou a aba Promoções.",
+    },
+    errors: {
+      required: "Preencha nome e e-mail.",
+      email: "Esse e-mail parece incompleto.",
+      generic: "Não conseguimos enviar agora. Tente de novo em instantes.",
+    },
+    explore: {
+      title: "CONHEÇA O POLEGATCH RIDE",
+      cards: [
+        {
+          text: "Como funciona o Método Polegatch de Treinamento Inteligente, do diagnóstico ao ajuste fino.",
+          cta: "O MÉTODO",
+          href: "/#metodologia",
+        },
+        {
+          text: "Os formatos de acompanhamento e qual combina com o seu momento.",
+          cta: "ACOMPANHAMENTO",
+          href: "/#planos",
+        },
+        {
+          text: "Quem é a Ana Polegatch e por que o método nasceu dentro do pelotão.",
+          cta: "A MENTORA",
+          href: "/#mentora",
+        },
+        {
+          text: "Não sabe por onde começar? Converse com a equipe e a gente desenha o melhor caminho para o seu treino.",
+          cta: "CONVERSAR",
+          href: "whatsapp",
+        },
+      ],
+    },
+  },
+
   footer: {
     copyright: "© 2026 Polegatch Ride. Todos os direitos reservados.",
   },
 
   // Links de ação. Atualize aqui quando os destinos reais estiverem definidos.
   links: {
+    // Endereço completo da landing page. A página de captura também roda em
+    // guia.polegatchride.com, onde links relativos como "/#planos" não chegariam lá.
+    landing: "https://landing-page-metodo-pr.vercel.app",
     whatsapp: "https://wa.me/5511999999999",
     trainingPeaks: "https://www.trainingpeaks.com/",
   },

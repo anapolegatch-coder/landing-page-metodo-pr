@@ -26,6 +26,13 @@ export const colors = {
 
   // Apoio neutro (escala slate usada pelo Tailwind por padrão também)
   muted: "#94a3b8", // slate-400 — textos secundários no dark
+
+  // Paleta Polegatch Ride (material de planos e logo), usada na página /guia
+  ride: {
+    navy: "#000f34", // Marinho: textos e botões
+    pink: "#e31376", // Rosa da logo: destaques
+    mist: "#e2e8f6", // Azul-claro das faixas do material
+  },
 } as const;
 
 /**
@@ -42,6 +49,8 @@ export const fonts = {
   // Inter para UI e texto; JetBrains Mono para dados/etiquetas técnicas.
   sans: ["var(--font-inter)", "system-ui", "sans-serif"],
   mono: ["var(--font-jetbrains-mono)", "ui-monospace", "monospace"],
+  // League Spartan: mesma família da logo Polegatch Ride (títulos da /guia).
+  display: ["var(--font-league-spartan)", "system-ui", "sans-serif"],
 } as const;
 
 /** Arredondamentos premium, cantos extremamente suaves. */
