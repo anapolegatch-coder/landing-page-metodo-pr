@@ -26,8 +26,8 @@ const logo = {
 /**
  * Página de captura do material gratuito, na identidade Polegatch Ride
  * (fundo claro, marinho e rosa do material de planos). Layout minimalista:
- * logo, título, uma frase e o formulário. Abaixo, atalhos para o site
- * polegatchride.com (sem WhatsApp).
+ * logo, título, uma frase e o formulário. Abaixo, só dois links discretos
+ * (Instagram e polegatchride.com), como no rodapé do e-mail de entrega.
  */
 export default function GuiaPage() {
   const { leadMagnet, links, footer } = content;
@@ -58,31 +58,28 @@ export default function GuiaPage() {
             </p>
 
             <LeadForm />
-          </div>
-        </section>
 
-        <section className="bg-ride-mist py-24">
-          <div className="container-px">
-            <h2 className="text-center font-display text-2xl font-bold tracking-tight md:text-3xl">
-              {leadMagnet.explore.title}
-            </h2>
-            <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
-              {leadMagnet.explore.cards.map((card) => (
-                <div
-                  key={card.cta}
-                  className="flex flex-col justify-between gap-8 rounded-[2rem] bg-white p-8"
+            <div className="mt-20 grid w-full grid-cols-2 border-t border-ride-mist pt-6 text-xs text-ride-navy/60">
+              <div className="border-r border-ride-mist px-2">
+                {leadMagnet.follow.instagramLabel}
+                <a
+                  href={links.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block font-bold text-ride-pink transition hover:text-ride-navy"
                 >
-                  <p className="text-sm leading-relaxed text-ride-navy/80">
-                    {card.text}
-                  </p>
-                  <a
-                    href={card.href}
-                    className="self-start rounded-[2rem] border border-ride-navy/25 px-5 py-2.5 text-xs font-bold tracking-wide transition hover:border-ride-pink hover:text-ride-pink"
-                  >
-                    {card.cta}
-                  </a>
-                </div>
-              ))}
+                  {leadMagnet.follow.instagramHandle}
+                </a>
+              </div>
+              <div className="px-2">
+                {leadMagnet.follow.siteLabel}
+                <a
+                  href={links.site}
+                  className="mt-1 block font-bold text-ride-navy transition hover:text-ride-pink"
+                >
+                  {leadMagnet.follow.siteText}
+                </a>
+              </div>
             </div>
           </div>
         </section>

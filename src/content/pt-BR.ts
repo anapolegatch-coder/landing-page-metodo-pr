@@ -274,27 +274,13 @@ export const ptBR = {
       email: "Esse e-mail parece incompleto.",
       generic: "Não conseguimos enviar agora. Tente de novo em instantes.",
     },
-    // Atalhos para o site polegatchride.com (Wix). Sem WhatsApp, por decisão
-    // da Pole: o contato com o lead acontece depois, por e-mail.
-    explore: {
-      title: "CONHEÇA O POLEGATCH RIDE",
-      cards: [
-        {
-          text: "Como funciona o Método Polegatch de Treinamento Inteligente, do diagnóstico ao ajuste fino.",
-          cta: "O MÉTODO",
-          href: "https://www.polegatchride.com",
-        },
-        {
-          text: "Os formatos de acompanhamento e qual combina com o seu momento.",
-          cta: "ACOMPANHAMENTO",
-          href: "https://www.polegatchride.com/planos-de-treinamento",
-        },
-        {
-          text: "Quem é a Ana Polegatch e por que o método nasceu dentro do pelotão.",
-          cta: "A MENTORA",
-          href: "https://www.polegatchride.com/sobre",
-        },
-      ],
+    // Dois links discretos abaixo do formulário, no mesmo estilo do rodapé
+    // do e-mail de entrega. Sem WhatsApp, por decisão da Pole.
+    follow: {
+      instagramLabel: "Siga no Instagram",
+      instagramHandle: "@polegatchride",
+      siteLabel: "Conheça o Polegatch Ride",
+      siteText: "polegatchride.com →",
     },
   },
 
@@ -305,6 +291,7 @@ export const ptBR = {
   // Links de ação. Atualize aqui quando os destinos reais estiverem definidos.
   links: {
     site: "https://www.polegatchride.com",
+    instagram: "https://www.instagram.com/polegatchride",
     whatsapp: "https://wa.me/5511999999999",
     trainingPeaks: "https://www.trainingpeaks.com/",
   },
