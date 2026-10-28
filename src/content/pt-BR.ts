@@ -274,31 +274,6 @@ export const ptBR = {
       email: "Esse e-mail parece incompleto.",
       generic: "Não conseguimos enviar agora. Tente de novo em instantes.",
     },
-    explore: {
-      title: "CONHEÇA O POLEGATCH RIDE",
-      cards: [
-        {
-          text: "Como funciona o Método Polegatch de Treinamento Inteligente, do diagnóstico ao ajuste fino.",
-          cta: "O MÉTODO",
-          href: "/#metodologia",
-        },
-        {
-          text: "Os formatos de acompanhamento e qual combina com o seu momento.",
-          cta: "ACOMPANHAMENTO",
-          href: "/#planos",
-        },
-        {
-          text: "Quem é a Ana Polegatch e por que o método nasceu dentro do pelotão.",
-          cta: "A MENTORA",
-          href: "/#mentora",
-        },
-        {
-          text: "Não sabe por onde começar? Converse com a equipe e a gente desenha o melhor caminho para o seu treino.",
-          cta: "CONVERSAR",
-          href: "whatsapp",
-        },
-      ],
-    },
   },
 
   footer: {
@@ -307,9 +282,6 @@ export const ptBR = {
 
   // Links de ação. Atualize aqui quando os destinos reais estiverem definidos.
   links: {
-    // Endereço completo da landing page. A página de captura também roda em
-    // guia.polegatchride.com, onde links relativos como "/#planos" não chegariam lá.
-    landing: "https://landing-page-metodo-pr.vercel.app",
     whatsapp: "https://wa.me/5511999999999",
     trainingPeaks: "https://www.trainingpeaks.com/",
   },
