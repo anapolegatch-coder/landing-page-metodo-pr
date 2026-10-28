@@ -1,0 +1,103 @@
+<!doctype html>
+<!--
+  E-mail de entrega do Guia do Ciclista Master (automação MailerLite).
+  Antes de usar, troque:
+   - LINK_DO_GUIA: link público do PDF
+   - src da logo: funciona depois que o site for publicado (ou suba a logo no MailerLite e cole o link aqui)
+  {$name} e {$unsubscribe} são preenchidos pelo MailerLite.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>Seu Guia do Ciclista Master</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; padding: 0; background: #e2e8f6; }
+    a { color: #000f34; }
+    @media (max-width: 620px) {
+      .card { padding: 40px 24px !important; }
+      .h1 { font-size: 30px !important; }
+      .col { display: block !important; width: 100% !important; border: 0 !important; padding: 12px 0 !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background:#e2e8f6;">
+  <!-- Pré-cabeçalho: aparece ao lado do assunto na caixa de entrada -->
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">
+    Os princípios do Método Polegatch para treinar com inteligência e continuar evoluindo.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#e2e8f6;">
+    <tr>
+      <td align="center" style="padding:40px 16px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
+          <tr>
+            <td class="card" align="center" style="background:#ffffff;border-radius:24px;padding:56px 48px;font-family:Helvetica,Arial,sans-serif;color:#000f34;">
+
+              <a href="https://www.polegatchride.com" target="_blank">
+                <img src="https://landing-page-metodo-pr.vercel.app/brand/polegatch-ride-logo.png" width="200" alt="Polegatch Ride" style="display:block;width:200px;height:auto;border:0;">
+              </a>
+
+              <h1 class="h1" style="margin:44px 0 0;font-family:'League Spartan',Helvetica,Arial,sans-serif;font-size:38px;line-height:1.05;font-weight:700;letter-spacing:-0.5px;color:#000f34;">
+                SEU GUIA CHEGOU.
+              </h1>
+              <p style="margin:12px 0 0;font-size:14px;font-style:italic;color:#4d5770;">
+                Método Polegatch de Treinamento Inteligente®
+              </p>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:28px auto 0;">
+                <tr><td style="width:48px;height:4px;background:#e31376;border-radius:4px;font-size:0;line-height:0;">&nbsp;</td></tr>
+              </table>
+
+              <p style="margin:28px 0 0;font-size:18px;line-height:1.55;color:#000f34;">
+                {$name}, aqui está o seu<br>Guia do Ciclista Master, pronto para baixar.
+              </p>
+              <p style="margin:16px 0 0;font-size:15px;line-height:1.6;color:#4d5770;">
+                Leia com calma e aplique um princípio por vez.<br>É assim que o treino inteligente funciona.
+              </p>
+
+              <!-- Botão -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:36px auto 0;">
+                <tr>
+                  <td align="center" bgcolor="#000f34" style="border-radius:999px;">
+                    <a href="LINK_DO_GUIA" target="_blank" style="display:inline-block;padding:16px 36px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;letter-spacing:1px;color:#ffffff;text-decoration:none;border-radius:999px;">
+                      BAIXAR O GUIA
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:40px 0 0;font-size:15px;color:#000f34;">
+                Bons treinos,<br><strong>Ana Polegatch</strong>
+              </p>
+
+              <!-- Rodapé do cartão: redes e site -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:44px;border-top:1px solid #e2e8f6;">
+                <tr>
+                  <td class="col" width="50%" align="center" style="padding:24px 8px 0;border-right:1px solid #e2e8f6;font-size:13px;color:#4d5770;">
+                    Siga no Instagram<br>
+                    <a href="https://www.instagram.com/polegatchride" target="_blank" style="display:inline-block;margin-top:8px;font-weight:700;color:#e31376;text-decoration:none;">@polegatchride</a>
+                  </td>
+                  <td class="col" width="50%" align="center" style="padding:24px 8px 0;font-size:13px;color:#4d5770;">
+                    Conheça o Polegatch Ride<br>
+                    <a href="https://www.polegatchride.com" target="_blank" style="display:inline-block;margin-top:8px;font-weight:700;color:#000f34;text-decoration:none;">polegatchride.com &rarr;</a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:24px 16px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#4d5770;">
+              Você recebeu este e-mail porque pediu o Guia do Ciclista Master no site do Polegatch Ride.<br>
+              <a href="{$unsubscribe}" style="color:#4d5770;">Não quero mais receber e-mails</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

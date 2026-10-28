@@ -7,6 +7,20 @@
  */
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  // O subdomínio guia.polegatchride.com abre direto a página de captura.
+  // "beforeFiles" é necessário porque "/" já existe (a landing page).
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/",
+          has: [{ type: "host", value: "guia.polegatchride.com" }],
+          destination: "/guia",
+        },
+      ],
+    };
+  },
+};
 
 export default nextConfig;

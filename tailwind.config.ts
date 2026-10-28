@@ -17,10 +17,12 @@ const config: Config = {
         cyan: colors.cyan,
         pink: colors.pink,
         muted: colors.muted,
+        ride: colors.ride,
       },
       fontFamily: {
         sans: [...fonts.sans],
         mono: [...fonts.mono],
+        display: [...fonts.display],
       },
       borderRadius: {
         "2xl-soft": radius.xl2,
