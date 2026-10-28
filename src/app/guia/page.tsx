@@ -36,30 +36,30 @@ export default function GuiaPage() {
     <div className={`${leagueSpartan.variable} bg-white text-ride-navy`}>
       <main>
         <section>
-          <div className="mx-auto flex min-h-[100svh] w-full max-w-2xl flex-col items-center px-6 pb-24 pt-14 text-center md:pt-20">
+          <div className="mx-auto flex min-h-[100svh] w-full max-w-2xl flex-col items-center px-6 pb-16 pt-10 text-center md:pb-24 md:pt-20">
             <a href={links.site} aria-label={leadMagnet.logoAlt}>
               <Image
                 {...logo}
                 alt={leadMagnet.logoAlt}
                 priority
-                className="h-7 w-auto md:h-9"
+                className="h-6 w-auto md:h-9"
               />
             </a>
 
-            <h1 className="mt-14 font-display text-5xl font-bold leading-[1.02] tracking-tight md:text-7xl">
+            <h1 className="mt-8 font-display text-[2rem] font-bold leading-[1.05] tracking-tight sm:text-5xl md:mt-14 md:text-7xl">
               {leadMagnet.title}
             </h1>
-            <p className="mt-4 text-sm italic text-ride-navy/70 md:text-base">
+            <p className="mt-3 text-sm italic text-ride-navy/70 md:mt-4 md:text-base">
               {leadMagnet.subtitle}
             </p>
-            <span aria-hidden="true" className="mt-6 h-1 w-12 rounded-full bg-ride-pink" />
-            <p className="mt-6 max-w-md text-sm leading-relaxed text-ride-navy/70 md:text-base">
+            <span aria-hidden="true" className="mt-5 h-1 w-12 rounded-full bg-ride-pink md:mt-6" />
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-ride-navy/70 md:text-base">
               {leadMagnet.description}
             </p>
 
             <LeadForm />
 
-            <div className="mt-20 grid w-full grid-cols-2 border-t border-ride-mist pt-6 text-xs text-ride-navy/60">
+            <div className="mt-14 grid w-full grid-cols-2 border-t border-ride-mist pt-6 text-xs text-ride-navy/60">
               <div className="border-r border-ride-mist px-2">
                 {leadMagnet.follow.instagramLabel}
                 <a

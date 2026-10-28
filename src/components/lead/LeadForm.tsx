@@ -59,8 +59,8 @@ export function LeadForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="mt-14 w-full text-left">
-      <div className="grid gap-8 sm:grid-cols-2">
+    <form onSubmit={onSubmit} noValidate className="mt-8 w-full text-left md:mt-14">
+      <div className="grid grid-cols-2 gap-5 md:gap-8">
         <label className="block text-sm">
           {leadMagnet.fields.firstName} *
           <input name="firstName" autoComplete="given-name" className={inputClass} />
@@ -70,7 +70,7 @@ export function LeadForm() {
           <input name="lastName" autoComplete="family-name" className={inputClass} />
         </label>
       </div>
-      <label className="mt-8 block text-sm">
+      <label className="mt-6 block text-sm md:mt-8">
         {leadMagnet.fields.email} *
         <input name="email" type="email" autoComplete="email" className={inputClass} />
       </label>
@@ -84,7 +84,7 @@ export function LeadForm() {
         className="absolute -left-[9999px] h-0 w-0 opacity-0"
       />
 
-      <p className="mt-6 text-xs leading-relaxed text-ride-navy/60">
+      <p className="mt-5 text-xs leading-relaxed text-ride-navy/60 md:mt-6">
         {leadMagnet.consent}
       </p>
 
@@ -94,7 +94,7 @@ export function LeadForm() {
         </p>
       )}
 
-      <div className="mt-10 text-center">
+      <div className="mt-8 text-center md:mt-10">
         <button
           type="submit"
           disabled={status === "sending"}
